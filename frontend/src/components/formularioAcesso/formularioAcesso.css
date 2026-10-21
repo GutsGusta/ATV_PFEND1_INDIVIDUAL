@@ -1,0 +1,77 @@
+.acesso {
+  display: flex;
+  justify-content: center;
+  padding: 64px 16px;
+}
+
+.acesso-caixa {
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  border-radius: 20px;
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+}
+
+.acesso-caixa h1 {
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.acesso-texto {
+  margin-bottom: 24px;
+  color: var(--texto-suave);
+  font-size: 14px;
+}
+
+.acesso-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--texto-suave);
+}
+
+.acesso-campo input {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--borda);
+  background: var(--fundo);
+  color: var(--texto);
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.acesso-campo input:focus {
+  border-color: var(--roxo);
+  box-shadow: 0 0 0 3px rgba(123, 44, 191, 0.3);
+}
+
+.acesso-erro {
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--borda-forte);
+  color: var(--texto);
+  font-size: 14px;
+}
+
+.acesso-botao {
+  width: 100%;
+}
+
+.acesso-troca {
+  margin: 20px 0 0;
+  text-align: center;
+  color: var(--texto-suave);
+  font-size: 14px;
+}
+
+.acesso-troca a {
+  color: var(--texto);
+  font-weight: 600;
+  text-decoration: underline;
+}
