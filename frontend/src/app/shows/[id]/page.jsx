@@ -1,9 +1,16 @@
 import "./show.css";
+<<<<<<< HEAD
 import Image from "next/image";
+=======
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
 import Link from "next/link";
 import FormularioCompra from "@/components/formularioCompra";
 import { buscarShow, buscarUsuarioLogado } from "@/servicos/api";
 import { formatarDataCompleta, formatarMoeda } from "@/utilitarios/formatar";
+<<<<<<< HEAD
+=======
+import { urlImagemShow } from "@/utilitarios/imagem";
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
 
 export const dynamic = "force-dynamic";
 
@@ -36,6 +43,11 @@ export default async function DetalheShow({ params }) {
     );
   }
 
+<<<<<<< HEAD
+=======
+  const imagem = urlImagemShow(show.imagem);
+
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
   return (
     <section className="secao">
       <div className="container">
@@ -45,6 +57,7 @@ export default async function DetalheShow({ params }) {
 
         <div className="row g-5">
           <div className="col-12 col-lg-7">
+<<<<<<< HEAD
             <div className={`show-capa capa-${show.tom} ${show.imagem ? "com-foto" : ""}`}>
               {show.imagem && (
                 <Image
@@ -56,6 +69,10 @@ export default async function DetalheShow({ params }) {
                   priority
                 />
               )}
+=======
+            <div className={`show-capa capa-${show.tom}${imagem ? " com-imagem" : ""}`}>
+              {imagem && <img className="capa-imagem" src={imagem} alt={`Imagem do show ${show.titulo}`} />}
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
               <p>{show.artista}</p>
             </div>
 

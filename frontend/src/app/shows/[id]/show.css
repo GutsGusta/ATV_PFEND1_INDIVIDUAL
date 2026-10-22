@@ -16,8 +16,11 @@
 }
 
 .show-capa {
+<<<<<<< HEAD
   position: relative;
   overflow: hidden;
+=======
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
   display: flex;
   align-items: flex-end;
   height: 260px;
@@ -27,8 +30,11 @@
 }
 
 .show-capa p {
+<<<<<<< HEAD
   position: relative;
   z-index: 1;
+=======
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
   margin: 0;
   font-family: var(--fonte-titulo), sans-serif;
   font-weight: 800;

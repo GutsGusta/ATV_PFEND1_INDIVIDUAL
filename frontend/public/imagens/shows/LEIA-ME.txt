@@ -1,0 +1,6 @@
+Coloque aqui as imagens dos shows (jpg, png ou webp).
+Depois, no DBeaver, ligue a imagem ao show:
+
+    UPDATE shows SET imagem = 'nome-do-arquivo.jpg' WHERE id = 1;
+
+Tamanho sugerido: 1200 x 600 px (proporção 2:1), até ~500 KB.

@@ -25,10 +25,21 @@ export function criarAutenticacaoControlador({ autenticacaoServico }) {
             tratarErro(erro, res, next);
         }
     }
+<<<<<<< HEAD
     function sair(req, res) {
         autenticacaoServico.sair(lerToken(req));
         apagarToken(res);
         res.status(200).json({ sucesso: true });
+=======
+    async function sair(req, res, next) {
+        try {
+            await autenticacaoServico.sair(lerToken(req));
+            apagarToken(res);
+            res.status(200).json({ sucesso: true });
+        } catch (erro) {
+            next(erro);
+        }
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
     }
     function eu(req, res) {
         res.status(200).json({ sucesso: true, dados: req.usuario });

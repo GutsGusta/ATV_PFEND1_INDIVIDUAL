@@ -19,7 +19,11 @@ export function criarAutenticacaoServico({ usuarioModelo, sessaoModelo }) {
             email: emailLimpo,
             senha
         });
+<<<<<<< HEAD
         return { usuario: mostrarUsuario(usuario), token: sessaoModelo.criar(usuario.id) };
+=======
+        return { usuario: mostrarUsuario(usuario), token: await sessaoModelo.criar(usuario.id) };
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
     }
     async function entrar({ email, senha }) {
         const emailLimpo = typeof email === 'string' ? email.trim().toLowerCase() : '';
@@ -28,6 +32,7 @@ export function criarAutenticacaoServico({ usuarioModelo, sessaoModelo }) {
         if (!usuario || typeof senha !== 'string' || usuario.senha !== senha) {
             throw new Error('E-mail ou senha incorretos');
         }
+<<<<<<< HEAD
         return { usuario: mostrarUsuario(usuario), token: sessaoModelo.criar(usuario.id) };
     }
     function sair(token) {
@@ -35,6 +40,15 @@ export function criarAutenticacaoServico({ usuarioModelo, sessaoModelo }) {
     }
     async function buscarPorToken(token) {
         const usuarioId = token ? sessaoModelo.buscar(token) : null;
+=======
+        return { usuario: mostrarUsuario(usuario), token: await sessaoModelo.criar(usuario.id) };
+    }
+    async function sair(token) {
+        if (token) await sessaoModelo.remover(token);
+    }
+    async function buscarPorToken(token) {
+        const usuarioId = token ? await sessaoModelo.buscar(token) : null;
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
         if (!usuarioId) return null;
         const usuario = await usuarioModelo.buscarPorId(usuarioId);
         return usuario ? mostrarUsuario(usuario) : null;

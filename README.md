@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Star Ticket
 
 Site para comprar ingressos de shows de música pop. Só usuários cadastrados podem comprar, e cada um vê seus ingressos na página Meus ingressos.
@@ -51,3 +52,6 @@ Depois abra http://localhost:3000
 - /shows/:id : detalhes e compra
 - /cadastro e /login : acesso
 - /painel : meus ingressos
+=======
+
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3

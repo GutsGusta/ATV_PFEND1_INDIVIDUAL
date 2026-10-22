@@ -23,7 +23,10 @@
 }
 
 .card-show-data {
+<<<<<<< HEAD
   z-index: 1;
+=======
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
   position: absolute;
   top: 16px;
   right: 16px;
@@ -50,8 +53,11 @@
 }
 
 .card-show-artista {
+<<<<<<< HEAD
   position: relative;
   z-index: 1;
+=======
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
   margin: 0;
   font-family: var(--fonte-titulo), sans-serif;
   font-weight: 800;
@@ -93,7 +99,11 @@
   line-height: 1.6;
 }
 
+<<<<<<< HEAD
 .card-show-rodape {
+=======
+.card-show-footer {
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -116,6 +126,10 @@
   font-size: 20px;
 }
 
+<<<<<<< HEAD
 .card-show-rodape .botao-principal {
+=======
+.card-show-footer .botao-principal {
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
   padding: 10px 22px;
 }

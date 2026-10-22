@@ -1,5 +1,8 @@
 import express from 'express';
+<<<<<<< HEAD
 import { criarPool } from './config/database.js';
+=======
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
 import { criarShowModelo } from './modelos/showModelo.js';
 import { criarIngressoModelo } from './modelos/ingressoModelo.js';
 import { criarUsuarioModelo } from './modelos/usuarioModelo.js';
@@ -19,11 +22,17 @@ export const app = express();
 
 app.use(express.json());
 
+<<<<<<< HEAD
 export const pool = criarPool();
 
 const showModelo = criarShowModelo({ pool });
 const ingressoModelo = criarIngressoModelo({ pool });
 const usuarioModelo = criarUsuarioModelo({ pool });
+=======
+const showModelo = criarShowModelo();
+const ingressoModelo = criarIngressoModelo();
+const usuarioModelo = criarUsuarioModelo();
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
 const sessaoModelo = criarSessaoModelo();
 
 const showServico = criarShowServico({ showModelo });

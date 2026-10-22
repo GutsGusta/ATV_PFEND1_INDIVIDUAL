@@ -75,7 +75,10 @@ export default async function Inicio() {
     <>
       <section className="destaque">
         <div className="container">
+<<<<<<< HEAD
           <span className="etiqueta">Música pop ao vivo</span>
+=======
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
           <h1>Os melhores shows de pop em um só lugar</h1>
           <p>Escolha seu show favorito, garanta seus ingressos e acompanhe tudo pela sua conta.</p>
           <div className="destaque-botoes">

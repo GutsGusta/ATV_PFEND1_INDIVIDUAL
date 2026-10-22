@@ -13,11 +13,14 @@ export function criarIngressoServico({ showModelo, ingressoModelo }) {
         return ingressoModelo.criar({
             usuarioId: usuario.id,
             showId: show.id,
+<<<<<<< HEAD
             titulo: show.titulo,
             artista: show.artista,
             dataShow: show.data,
             local: show.local,
             cidade: show.cidade,
+=======
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
             quantidade,
             total: show.preco * quantidade
         });

@@ -1,4 +1,5 @@
 import "./cardShow.css";
+<<<<<<< HEAD
 import Image from "next/image";
 import Link from "next/link";
 import { formatarMoeda, formatarDia, formatarMes } from "@/utilitarios/formatar";
@@ -16,6 +17,19 @@ export default function CardShow({ show }) {
             className="capa-foto"
           />
         )}
+=======
+import Link from "next/link";
+import { formatarMoeda, formatarDia, formatarMes } from "@/utilitarios/formatar";
+import { urlImagemShow } from "@/utilitarios/imagem";
+
+export default function CardShow({ show }) {
+  const imagem = urlImagemShow(show.imagem);
+
+  return (
+    <article className="card-show">
+      <div className={`card-show-capa capa-${show.tom}${imagem ? " com-imagem" : ""}`}>
+        {imagem && <img className="capa-imagem" src={imagem} alt="" />}
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
         <div className="card-show-data">
           <strong>{formatarDia(show.data)}</strong>
           <span>{formatarMes(show.data)}</span>
@@ -33,7 +47,11 @@ export default function CardShow({ show }) {
 
         <p className="card-show-descricao">{show.descricao}</p>
 
+<<<<<<< HEAD
         <div className="card-show-rodape">
+=======
+        <div className="card-show-footer">
+>>>>>>> b637d9e47172bd5fa123f9d95ea8d77a307081d3
           <div className="card-show-preco">
             <span>a partir de</span>
             <strong>{formatarMoeda(show.preco)}</strong>
